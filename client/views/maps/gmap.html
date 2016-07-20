@@ -1,0 +1,32 @@
+<!-- 패널 -->
+  <div id="settings" data-ng-include=" 'views/settings/settings.html' " style="display:none"></div>
+<!-- 패널 -->
+
+<!-- 페이지 헤더 스타트 -->
+<div class="pageheader">
+  <h3><i class="fa fa-map-marker"></i> 맵 </h3>
+  <div class="breadcrumb-wrapper hidden-xs"> <span class="label">카테고리</span>
+    <ol class="breadcrumb">
+      <li> <a href="index.html"> 홈 </a> </li>
+      <li class="active"> 맵 </li>
+    </ol>
+  </div>
+</div>
+<!-- 페이지 헤더 엔드 -->
+
+<div class="page"><!--페이지-->
+
+         <div class="row"><!--구글맵-->
+            <div class="col-md-12">
+               <section class="panel panel-default">
+                  <h4 class="nm pad-15"> Google <strong> Map </strong></h4>
+                    <div class="panel-body">
+                       <map class="ui-map" zoom="11" center="[37.407680, 127.116369]" scrollwheel="false">
+                          <marker position="[37.407680, 127.116369]" title="marker" animation="Animation.DROP"></marker>
+                      </map>
+                    </div>
+               </section>
+            </div>
+         </div><!--//구글맵-->
+		 
+</div><!--//페이지-->

@@ -1,0 +1,36 @@
+
+
+<!-- 상단 -->
+  <section id="settings" data-ng-include=" 'views/settings/settings.html' " style="display:none"></section>
+<!-- 상단 -->
+
+<!-- 달력상단 -->
+<div class="pageheader">
+
+  <h3><i class="fa fa-calendar"></i>달력</h3>
+  
+  <div class="breadcrumb-wrapper hidden-xs"> <span class="label">카테고리</span>
+  
+    <ol class="breadcrumb">
+      <li> <a href="#">홈</a> </li>
+      <li class="active">달력</li>
+    </ol>
+	
+  </div>
+</div>
+<!-- //달력상단 -->
+
+<!-- 달력내용 -->
+<div class="page page-calendar" data-ng-controller="calendarCtrl">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="panel">
+        <div class="panel-body">
+          <div data-ng-model="eventSources" calendar="myCalendar1" config="uiConfig.calendar" ui-calendar="uiConfig.calendar" class="pv-10"></div>
+          <div class="callout callout-info" data-ng-show="alertMessage != undefined && alertMessage != ''"> <span>{{alertMessage}}</span> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //달력내용 -->

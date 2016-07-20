@@ -1,0 +1,228 @@
+<div class="top-header clearfix"><!--상단-->
+
+
+    <div class="logo {{admin.logo}}"><!--상단-->
+        <div class="logo-title">
+            <strong style="margin-left: 51px; font-size: 34px;">VMS</strong>
+        </div>
+        <div class="logo-icon">
+            <i class="fa fa-medkit" aria-hidden="true" style="font-size:30px; margin-left: 4px;"></i>
+        </div>
+    </div><!--//상단-->
+
+
+    <div class="menu-button" data-toggle-off-canvas><!-- 화면 줄였을때 네비나오게 하는 버튼-->
+        <a href="javascript:void(0)">
+           <i class="fa fa-fw fa-dedent"></i>
+        </a>
+    </div><!--//화면 줄였을때 네비나오게 하는 버튼-->
+
+	
+    <div class="top-nav"><!--탑네비-->
+        <ul class="nav-left list-unstyled"><!--ul리스트-->
+
+           <li><!--옆에 사이드 바 메뉴버튼-->
+                <a href="javascript:void(0)" class="toggle-min" id="step3" data-toggle-nav-collapsed-min>
+                   <i class="fa fa-bars fa-lg"></i>
+                </a>
+            </li><!--//옆에 사이드 바 메뉴버튼-->
+
+
+ 			<!--프로필 토글버튼-->
+            <li class="hidden-xs" data-toggle-profile=""></li>
+ 			<!--//프로필 토글버튼-->
+
+
+            <li class="dropdown" data-dropdown data-on-toggle="toggled(open)"><!--메시지 드롭다운-->
+				
+                <a href="javascript:void(0)" class="dropdown-toggle" data-dropdown-toggle>
+                    <i class="fa fa-envelope fa-lg"></i>
+                    <span class="badge badge-header badge-warning">3</span>
+                </a>
+
+                <!--메시지 드롭다운 메뉴-->
+                <div class="dropdown-menu panel with-arrow animated fadeInDown">
+                    
+					<div class="panel-heading"><!--위-->
+                    4통의 알림 메일이 왔습니다.
+                    </div><!--//위-->
+						 
+                    <div class="overflow" data-slim-scroll data-scroll-height="240px">
+                        <ul class="list-group">
+
+
+                            <li class="list-group-item nb"><!--1-->
+                                <a href="javascript:void(0)" class="pull-left avatar">
+                                    <img src="images/photos/user1.png" alt="" class="img-circle img40_40">
+                                    <i class="on bottom text-white"></i>
+                                </a>
+                                <div class="inline-block">
+                                    <div class="text-small ph-10" style="font-weight:bold;">송중기 고객 85919</div>
+                                    <div class="text-small ph-10">운동 후 데이터라 데이터...</div>
+                                    <small class="text-small ph-10">15분전</small>
+                                </div>
+                            </li><!--//1-->
+
+
+                            <li class="list-group-item nb"><!--2-->
+                                <a href="javascript:void(0)" class="pull-left avatar">
+                                    <img src="images/photos/user2.png" alt="" class="img-circle img40_40">
+                                    <i class="on bottom text-white"></i>
+                                </a>
+                                <div class="inline-block">
+                                    <div class="text-small ph-10" style="font-weight:bold;">박보검 고객 93616</div>
+                                    <div class="text-small ph-10">새로운 등록이 완료되었습니다.</div>
+                                    <small class="text-small ph-10">10분전</small>
+                                </div>
+                            </li><!--//2-->
+
+
+                            <li class="list-group-item nb"><!--3-->
+                                <a href="javascript:void(0)" class="pull-left avatar">
+                                    <img src="images/photos/user3.png" alt="" class="img-circle img40_40">
+                                    <i class="on bottom text-white"></i>
+                                </a>
+                                <div class="inline-block">
+                                    <div class="text-small ph-10" style="font-weight:bold;">서강준 고객 931012</div>
+									<div class="text-small ph-10">신규 고객입니다.</div>
+                                    <small class="text-small ph-10">5분전</small>
+                                </div>
+                            </li><!--//3-->
+
+
+                          <div class="panel-footer"><!--푸터-->
+                              <a href="#/mail/inbox">모든 알람 보기</a>
+                          </div><!--//푸터-->
+						  
+						</ul>
+					</div>
+                </div>
+            </li><!--//메시지 드롭다운-->
+
+
+
+            <li class="dropdown" data-dropdown data-on-toggle="toggled(open)"><!--긴급알림-->
+                <a href="javascript:void(0)" class="dropdown-toggle" data-dropdown-toggle>
+                    <i class="fa fa-bell fa-lg"></i>
+                    <span class="badge badge-header badge-success">3</span>
+                </a>
+
+                <div class="dropdown-menu panel with-arrow animated fadeInDown"><!--긴급알림 드롭다운-->
+				
+                    <div class="panel-heading">긴급알림</div>
+					
+                        <div data-slim-scroll="" data-scroll-height="330px">
+
+                            <div class="widget-comments"><!--1-->
+                                <div class="widgetcomment-item">
+                                    <div class="counter-icon icon-sm bg-danger">
+                                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="widgetcomment-head">송중기 고객 85919</p>
+                                    <p>혈압,체온<span class="text-red">비정상</span></p>
+                                </div>
+                            </div><!--//1-->
+
+                            <div class="widget-comments"><!--2-->
+                                <div class="widgetcomment-item">
+                                    <div class="counter-icon icon-sm bg-danger">
+                                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="widgetcomment-head">박보검 고객 93616</p>
+                                    <p>혈압,체온<span class="text-red">비정상</span></p>
+                                </div>
+                            </div><!--//2-->
+
+                            <div class="widget-comments"><!--3-->
+                                <div class="widgetcomment-item">
+                                    <div class="counter-icon icon-sm bg-danger">
+                                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="widgetcomment-head">서강준 고객 931012</p>
+                                    <p>혈압,체온<span class="text-red">비정상</span></p>
+                                </div>
+                            </div><!--//3-->
+
+                           <!--푸터-->
+                           <div class="panel-footer">
+                              <a href="javascript:void(0)">모든 알림보기</a>
+                           </div><!--//푸터-->
+						   
+						</div>
+                </div><!--//긴급알림 드롭다운-->
+            </li><!--//긴급알림-->
+
+		</ul><!--//ul리스트-->
+
+
+        <ul class="nav-right pull-right list-unstyled"><!--오른쪽메뉴-->
+
+            <li class="hidden-xs hidden-sm" data-fullscreen-Mode></li><!--풀스크린-->
+
+                <li class="dropdown langs text-normal" data-ng-controller="LangCtrl" data-dropdown data-on-toggle="toggled(open)"><!--데이터 개월수-->
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-dropdown-toggle style="font-weight:bold; font-size:26px;">D</a>
+
+
+                    <ul class="dropdown-menu with-arrow pull-right list-langs animated fadeInDown" role="menu"><!--개월수 서브메뉴-->
+                            <li>
+                               <a href="#">1개월</a>
+                            </li>
+                            <li>
+                               <a href="#">2개월</a>
+                            </li>
+                            <li>
+                               <a href="#">3개월</a>
+                            </li>
+                    </ul><!--//개월수 서브메뉴-->
+
+                </li><!--//데이터 개월수-->
+
+
+                <li class="dropdown text-normal nav-profile" data-dropdown data-on-toggle="toggled(open)"><!--병원프로필-->
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-dropdown-toggle>
+                        <img src="images/photos/se.png"  class="img-circle img40_40">
+                        <span class="hidden-xs ph-5">
+                            <span data-i18n="연세소아과"></span>
+                            <i class="fa fa-caret-down"></i>
+                        </span>
+                    </a>
+
+
+                    <ul class="dropdown-menu with-arrow pull-right animated fadeInDown"><!--드롭다운-->
+                        <li>
+                            <a href="#/pages/profile">
+                                <i class="fa fa-user"></i>
+                                <span data-i18n="프로필"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/tasks/tasks">
+                                <i class="fa fa-check"></i>
+                                <span data-i18n="메모"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/pages/lock-screen">
+                                <i class="fa fa-lock"></i>
+                                <span data-i18n="잠금"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/pages/signin">
+                                <i class="fa fa-sign-out"></i>
+                                <span data-i18n="로그아웃"></span>
+                            </a>
+                        </li>
+                    </ul><!--//드롭다운-->
+
+
+                </li><!--//병원프로필-->
+
+
+                <li class="hidden-xs"><a href="javascript:void(0)" data-right-Sidebar><i class="fa fa-indent fa-lg"></i></a></li><!--옆에 채팅창 열기-->
+
+
+		</ul><!--//오른쪽 메뉴-->		   
+    </div><!--//탑네비-->
+
+</div><!--//헤더-->

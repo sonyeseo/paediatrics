@@ -1,0 +1,332 @@
+
+
+<!-- 사이트 -->
+<div id="settings" data-ng-include=" 'views/settings/settings.html' " style="display:none"></div>
+<!-- 사이트 패널 -->
+
+
+<div class="pageheader"><!--페이지헤더-->
+
+  <h3><i class="fa fa-user"></i>프로필</h3>
+  
+  <div class="breadcrumb-wrapper hidden-xs"> <span class="label">카테고리</span>
+    <ol class="breadcrumb">
+      <li> <a href="index.html">홈</a> </li>
+      <li class="active">프로필</li>
+    </ol>
+  </div>
+  
+</div><!--//페이지헤더-->
+
+
+<div class="page"><!--페이지-->
+  <div class="row"><!--전체-->
+    <div class="col-xs-12 col-md-3 col-lg-3 profile-make np"><!--부트스트랩-->
+	
+      <div class="col-lg-12"><!--프로필 사진 영역-->
+			<div class="panel" ng-init="initWaves()">
+				  <div class="panel-body np"> <!--<img src="images/photos/big-user-image.jpg" alt="Cover" width="100%">-->
+						<div class="text-center"> 
+							  <!-- 패널바디 -->
+							  <h4 class="mt-15">동탄연세소아청소년과</h4>
+							  <p class="text-small">031-8015-1375</p>
+							  <!--// 패널바디 -->
+							  <div class="pv-15 btn-group"> 
+								<a href="javascript:void(0)" class="btn waves-effect waves-danger"> <i class="fa fa-facebook"></i> </a>
+								<a href="javascript:void(0)" class="btn waves-effect waves-danger"> <i class="fa fa-google-plus"></i> </a> 
+								<a href="javascript:void(0)" class="btn waves-effect waves-danger"> <i class="fa fa-linkedin"></i> </a> 
+								<a href="javascript:void(0)" class="btn waves-effect waves-danger"> <i class="fa fa-twitter"></i> </a> 
+							  </div>
+						</div>
+				  </div>
+			</div>
+      </div><!--//프로필 사진 영역-->
+	  
+      <div class="col-md-12"><!--인포메이션-->
+	  
+			<div class="panel"><!--내부정보-->
+			
+			  <header class="panel-heading nb"> <i class="fa fa-user ph-5"></i> 정보</header>
+			  
+			  <div class="panel-body">
+					<table class="table">
+					  <tbody>
+						<tr>
+						  <td><i class="fa fa-street-view ph-5"></i></td>
+						  <td>주소</td>
+						  <td>경기도 화성시 동탄지성로 136 우리프라자</td>
+						</tr>
+						<tr>
+						  <td><i class="fa fa-phone ph-5"></i></td>
+						  <td>전화번호</td>
+						  <td>031-8015-1375</td>
+						</tr>
+						<tr>
+						  <td><i class="fa fa-plus-square-o ph-5"></i></td>
+						  <td>분류</td>
+						  <td>병원,의원 > 소아청소년과</td>
+						</tr>
+						<tr>
+						  <td><i class="fa fa-laptop ph-5"></i></td>
+						  <td>홈페이지</td>
+						  <td>http://www.youseikids.co.kr/</td>
+						</tr>
+					  </tbody>
+					  
+					</table>
+			  </div>
+			</div><!--//내부정보-->
+			
+			<div class="panel"><!--고객들-->
+			
+			  <header class="panel-heading"> <i class="fa fa-users ph-5"></i>환자</header>
+			  
+				  <div class="panel-body">
+						<ul class="list-inline">
+						  <li class="pad-5">
+							<div class="media-object avatar"><img src="images/photos/user1.png" alt=""><i class="on bottom text-white"></i></div>
+						  </li>
+						  <li class="pad-5">
+							<div class="media-object avatar"><img src="images/photos/user2.png" alt=""><i class="busy bottom text-white"></i></div>
+						  </li>
+						  <li class="pad-5">
+							<div class="media-object avatar"><img src="images/photos/user3.png" alt=""><i class="on bottom text-white"></i></div>
+						  </li>
+						  <li class="pad-5">
+							<div class="media-object avatar"><img src="images/photos/user4.png" alt=""><i class="away bottom text-white"></i></div>
+						  </li>
+						  <li class="pad-5">
+							<div class="media-object avatar"><img src="images/photos/user5.png" alt=""><i class="off bottom text-white"></i></div>
+						  </li>
+						  <li class="pad-5">
+							<div class="media-object avatar"><img src="images/photos/user6.png" alt=""><i class="on bottom text-white"></i></div>
+						  </li>
+						  <li class="pad-5">
+							<div class="media-object avatar"><img src="images/photos/user7.png" alt=""><i class="busy bottom text-white"></i></div>
+						  </li>
+						  <li class="pad-5">
+							<div class="media-object avatar"><img src="images/photos/user1.png" alt=""><i class="on bottom text-white"></i></div>
+						  </li>
+						  <li class="pad-5">
+							<div class="media-object avatar"><img src="images/photos/user2.png" alt=""><i class="off bottom text-white"></i></div>
+						  </li>
+						  <li class="pad-5">
+							<div class="media-object avatar"><img src="images/photos/user3.png" alt=""><i class="on bottom text-white"></i></div>
+						  </li>
+						  <li class="pad-5">
+							<div class="media-object avatar"><img src="images/photos/user4.png" alt=""><i class="busy bottom text-white"></i></div>
+						  </li>
+						  <li class="pad-5">
+							<div class="media-object avatar"><img src="images/photos/user5.png" alt=""><i class="on bottom text-white"></i></div>
+						  </li>
+						</ul>
+				  </div>
+			</div><!--//고객들-->
+			
+			<div class="panel"><!--기본정보-->
+			
+			  <header class="panel-heading nb"> <i class="fa fa-user ph-5"></i>기본정보</header>
+			  
+			  <div class="panel-body"><!--기본정보-->
+				<table class="table">
+				  <tbody>
+					<tr>
+					  <td>이용시간</td>
+					  <td>평일 09:20~21:00 점심시간 (1시~2시)</td>
+					</tr>
+					<tr>
+					  <td>이용정보</td>
+					  <td>주차, 무선인터넷, 육아시설(놀이방), 남/녀 화장실 구분</td>
+					</tr>
+
+				  </tbody>
+				</table>
+			  </div><!--//기본정보-->
+			  
+			</div><!--//기본정보-->
+			
+      </div><!--//인포메이션-->
+    </div><!--//부트스트랩-->
+	
+    <!--<div class="col-xs-12 col-md-9 col-lg-9">
+      <section class="panel panel-default">
+        <tabset class="tab-block"> 
+         <tab heading="Timeline">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-12"> 
+                  
+
+                  <div class="profile-timeline timeline-right"> 
+                    
+
+                    <div class="timeline-item timeline-main">
+                      <div class="timeline-date bg-primary">Now</div>
+                    </div>
+
+                    
+
+                    <div class="timeline-item timeline-item-right">
+                      <div class="timeline-item-icon bg-purple"><span class="fa fa-check"></span></div>
+                      <div class="timeline-item-content">
+                        <div class="timeline-heading"> <img src="images/photos/user2.png" alt=""/> John Doe posted a new blog. </div>
+                        <div class="timeline-body"> <img src="images/gallery/image1.png" alt="" class="img-text" width="150" align="left"/>
+                          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+                        </div>
+                        <div class="timeline-footer"> <a href="javascript:void(0)">Read more</a>
+                          <div class="pull-right"> <a href="javascript:void(0)"><span class="fa fa-comment"></span> 35</a> <a href="javascript:void(0)"><span class="fa fa-share"></span></a> </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    
+
+                    <div class="timeline-item timeline-item-right">
+                      <div class="timeline-item-icon bg-success"><span class="fa fa-users"></span></div>
+                      <div class="timeline-item-content">
+                        <div class="timeline-heading" style="padding-bottom: 10px;"> <img src="images/photos/user1.png" alt=""/> Shirley Anderson started following <img src="images/photos/user3.png" alt=""/> <img src="images/photos/user4.png" alt=""/> </div>
+                      </div>
+                    </div>
+
+                    
+
+                    <div class="timeline-item timeline-item-right">
+                      <div class="timeline-item-icon bg-info"><span class="fa fa-image"></span></div>
+                      <div class="timeline-item-content">
+                        <div class="timeline-heading"> <img src="images/photos/user3.png" alt=""/> Jonathan Anderson Uploaded 5 images </div>
+                        <div class="timeline-body" id="links">
+                          <div class="row">
+                            <div class="col-md-4"> <a href="images/gallery/image1.png" title="Nature Image 1" data-gallery> <img src="images/gallery/image1.png" class="img-responsive img-text" alt=""/> </a> </div>
+                            <div class="col-md-4"> <a href="images/gallery/image2.png" title="Nature Image 2" data-gallery> <img src="images/gallery/image2.png" class="img-responsive img-text" alt=""/> </a> </div>
+                            <div class="col-md-4"> <a href="images/gallery/image3.png" title="Nature Image 3" data-gallery> <img src="images/gallery/image3.png" class="img-responsive img-text" alt=""/> </a> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    
+
+                    <div class="timeline-item timeline-item-right">
+                      <div class="timeline-item-icon bg-danger"><span class="fa fa-star"></span></div>
+                      <div class="timeline-item-content">
+                        <div class="timeline-heading" style="padding-bottom: 10px;"> <img src="images/photos/user3.png" alt=""/> Jonathan Smith completed the task “Application UI Re-design” within the dead line </div>
+                      </div>
+                    </div>
+ 
+                    
+
+                    <div class="timeline-item timeline-item-right">
+                      <div class="timeline-item-icon bg-azure"><span class="fa fa-star"></span></div>
+                      <div class="timeline-item-content">
+                        <div class="timeline-heading" style="padding-bottom: 10px;"> <img src="images/photos/user5.png" alt=""/> <a href="javascript:void(0)">John Doe</a> joined group <a href="javascript:void(0)">Web Developers</a> </div>
+                      </div>
+                    </div>
+
+                    
+
+                    <div class="timeline-item timeline-item-right">
+                      <div class="timeline-item-icon bg-warning"><span class="fa fa-map-marker"></span></div>
+                      <div class="timeline-item-content">
+                        <map class="ui-map-175" center="[40.74, -74.18]" scrollwheel="true">
+                          <marker position="[40.72, -74.20]" title="marker" animation="Animation.DROP"></marker>
+                          <marker position="[40.73, -74.19]" title="drag me" draggable="true"></marker>
+                        </map>
+                        <div class="timeline-heading"> <img src="images/photos/user3.png" alt=""/> <a href="javascript:void(0)">John Doe</a> invite you to <a href="javascript:void(0)">@Event</a> </div>
+                      </div>
+                    </div>
+
+                    
+
+                    <div class="timeline-item timeline-item-right">
+                      <div class="timeline-item-icon bg-info"><span class="fa fa-users"></span></div>
+                      <div class="timeline-item-content">
+                        <div class="timeline-heading" style="padding-bottom: 10px;"> <img src="images/photos/user1.png" alt=""/> <a href="javascript:void(0)"> Smith Johnson </a> added to friends <img src="images/photos/user2.png" alt=""/> <img src="images/photos/user3.png" alt=""/> <img src="images/photos/user4.png" alt=""/> </div>
+                      </div>
+                    </div>
+
+                    
+                  </div>
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          </tab>
+          <tab heading="Projects">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Project</th>
+                    <th> Project Deadline </th>
+                    <th>Status</th>
+                    <th>Client</th>
+                    <th>Progress</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>IT Help Desk</td>
+                    <td>11 Feb 2015</td>
+                    <td><span class="label label-danger">Critical</span></td>
+                    <td>Amery Lee</td>
+                    <td><progressbar class="progressbar-xs no-margin" value="55"></progressbar></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Product Dev</td>
+                    <td>12 june 2015</td>
+                    <td><span class="label label-warning">High</span></td>
+                    <td>Romayne Carlyn</td>
+                    <td><progressbar class="progressbar-xs no-margin" value="34" type="success"></progressbar></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td> Website Redesign</td>
+                    <td>11 november 2015</td>
+                    <td><span class="label label-success">Normal</span></td>
+                    <td>Marybeth Joanna</td>
+                    <td><progressbar class="progressbar-xs no-margin" value="68" type="info"></progressbar></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td> Local Ad </td>
+                    <td>15 april 2015</td>
+                    <td><span class="label label-success">Normal</span></td>
+                    <td>Jonah Benny</td>
+                    <td><progressbar class="progressbar-xs no-margin" value="52" type="warning"></progressbar></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Design new theme</td>
+                    <td>2 May 2015</td>
+                    <td><span class="label label-warning">High</span></td>
+                    <td>Daly Royle</td>
+                    <td><progressbar class="progressbar-xs no-margin" value="77" type="danger"></progressbar></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Mockup Testing</td>
+                    <td>6 June 2015</td>
+                    <td><span class="label label-info">On Hold</span></td>
+                    <td>Jane Swift</td>
+                    <td><progressbar class="progressbar-xs no-margin" value="55" type="success"></progressbar></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          </tab> 
+        </tabset>
+      </section>
+
+    </div><!--//부트스트랩-->
+	
+  </div><!--//전체-->
+</div><!--//페이지-->

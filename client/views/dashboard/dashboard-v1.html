@@ -1,0 +1,83 @@
+<!-- 사이트 세팅패널 -->
+<section id="settings" data-ng-include=" 'views/settings/settings.html' " style="display:none"></section>
+<!-- //사이트 세팅패널 -->
+
+<!-- 페이지 헤더 -->
+<div class="pageheader">
+  <h3> <i class="fa fa-home"></i>건강 데이터 분석</h3>
+  <div class="breadcrumb-wrapper hidden-xs"> <span class="label">카테고리</span>
+    <ol class="breadcrumb">
+      <li> <a href="#">홈</a> </li>
+      <li class="active">건강차트</li>
+    </ol>
+  </div>
+</div>
+<!-- //페이지 헤더 --> 
+
+<!--건강차트-->
+<div class="page page-charts" data-ng-controller="morrisChartCtrl">
+
+	<div class="row"><!--줄바꿈-->
+	
+		<div class="col-md-4"><!--1-->
+		  <div class="panel panel-default">
+			<h4 class="nm pad-15">  <strong>체온</strong> </h4>
+			<div class="panel-body">
+			  <div morris-chart data="simple1.data" data-type="simple1.type" data-options="simple1.options"></div>
+			</div>
+		  </div>
+		</div><!--//1-->
+
+		<div class="col-md-4"><!--2-->
+		  <div class="panel panel-default">
+			<h4 class="nm pad-15">  <strong>심박</strong> </h4>
+			<div class="panel-body">
+			  <div morris-chart data="simple2.data" data-type="simple2.type" data-options="simple2.options"></div>
+			</div>
+		  </div>
+		</div><!--//2-->
+
+		<div class="col-md-4"><!--3-->
+		  <div class="panel panel-default">
+			<h4 class="nm pad-15">  <strong>혈압</strong> </h4>
+			<div class="panel-body">
+			  <div morris-chart data="combo1.data" data-type="combo1.type" data-options="combo1.options"></div>
+			</div>
+		  </div>
+		</div><!--//3-->		
+		
+	</div><!--//줄바꿈-->
+	
+	<div class="row"><!--줄바꿈-->
+	  
+		<div class="col-md-4"><!--1-->
+		  <div class="panel panel-default">
+			<h4 class="nm pad-15"><strong>체온</strong> </h4>
+			<div class="panel-body">
+			  <div morris-chart data="donut1.data" data-type="donut1.type" data-options="donut1.options" class="height-250"></div>
+			</div>
+		  </div>
+		</div><!--//1-->
+		
+		<div class="col-md-4"><!--2-->
+		  <div class="panel panel-default">
+			<h4 class="nm pad-15"><strong>심박</strong> </h4>
+			<div class="panel-body">
+			  <div morris-chart data="donut2.data" data-type="donut2.type" data-options="donut2.options" class="height-250"></div>
+			</div>
+		  </div>
+		</div><!--//2-->
+		
+		<div class="col-md-4"><!--3-->
+		  <div class="panel panel-default">
+			<h4 class="nm pad-15"><strong>혈압</strong> </h4>
+			<div class="panel-body">
+			  <div morris-chart data="donut3.data" data-type="donut3.type" data-options="donut3.options" class="height-250"></div>
+			</div>
+		  </div>
+		</div><!--//3-->
+		
+	</div><!--//줄바꿈-->
+	
+</div>
+<!--//건강차트-->

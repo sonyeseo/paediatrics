@@ -1,0 +1,115 @@
+<!-- 메모 페이지 상단 -->
+<div class="pageheader">
+
+  <h3><i class="fa fa-list"></i>메모</h3>
+  
+  <div class="breadcrumb-wrapper hidden-xs"> <span class="label">카테고리:</span>
+    <ol class="breadcrumb">
+      <li> <a href="index.html">홈</a> </li>
+      <li class="active">메모</li>
+    </ol>
+  </div>
+  
+</div>
+<!-- //메모 페이지 상단 -->
+
+<div class="page page-tasks"><!--메모 페이지 내부-->
+    <div class="row"><!--전체 로우-->
+        <div class="col-md-12" data-ng-controller="TabsDemoCtrl"><!--12그리드 부트스트랩-->
+            <section class="task-container" data-ng-controller="taskCtrl"><!--섹션-->
+
+                <form data-ng-submit="add()" class="add-task"><!--중요한 메모 기재-->
+                    <input type="text"
+                           placeholder="중요한 일들을 기재해주세요."
+                           class="form-control"
+                           data-ng-model="newTask"
+                           data-autofocus>
+                    <a type="submit" class="submit-button" data-ng-click="add()">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </a>
+                </form><!--//중요한 메모 기재-->
+
+                <section>
+                    <ul class="filters list-inline nav nav-tabs">
+                        <li data-ng-class="{active: statusFilter == ''}">
+                            <a href="" 
+                               data-toggle="tab"
+                               data-ng-click="filter('all')"
+                               >전체</a>
+                        </li>
+                        <li data-ng-class="{active: statusFilter.completed == false }">
+                            <a href=""
+                               data-toggle="tab"
+                               data-ng-click="filter('active')"
+                               >실행중</a>
+                        </li>
+                        <li data-ng-class="{active: statusFilter.completed == true }">
+                            <a href=""
+                               data-toggle="tab"
+                               data-ng-click="filter('completed')"
+                               >완료</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section  data-ng-cloak><!--새로 생성된 메모-->
+                    <ul class="task-list list-unstyled">
+                        <li data-ng-repeat="task in tasks | filter:statusFilter track by $index" 
+                            data-ng-class="{completed: task.completed, editing: task == editedTask}">
+                            <span class="view">
+                                <input type="checkbox"
+                                       class="toggle-task"
+                                       data-ng-model="task.completed"
+                                       data-ng-change="completed(task)">
+                                <label data-ng-dblclick="edit(task)">{{task.title}}</label>
+                                <span class="glyphicon glyphicon-pencil"
+                                      data-ng-click="edit(task)"></span>
+                                <span class="glyphicon glyphicon-remove"
+                                      data-ng-click="remove(task, $index)"
+                                      ></span>
+                            </span>
+                            <form data-ng-submit="doneEditing(task, $index)">
+                                <input type="text"
+                                       class="edit form-control"
+                                       data-ng-trim="false"
+                                       data-ng-model="task.title"
+                                       data-ng-blur="doneEditing(task, $index)"
+                                       data-task-focus="task == editedTask">
+                            </form>
+                        </li>
+                    </ul>
+                </section><!--//새로 생성된 메모-->
+
+                <footer class="task-footer"><!--푸터-->
+                    <ul class="list-inline clearfix">
+					
+                        <li class="first-item">
+                            <input type="checkbox"
+                                   id="toggle-all"
+                                   data-ng-model="allChecked"
+                                   data-ng-change="markAll(allChecked)">
+                            <label for="toggle-all">완료 메모 지우기</label>
+                        </li>
+						
+                        <li class="text-center">
+                            <span>
+                                <strong>{{remainingCount}}</strong>
+                                <span class="text-muted"
+                                      data-ng-pluralize count="remainingCount"
+                                      when="{one: 'item left', other: 'items left'}"></span>
+                            </span>                            
+                        </li>
+						
+                        <li class="text-right">
+                            <span class="clear-completed"
+                                  data-ng-click="clearCompleted()"
+                                  data-ng-show="remainingCount < tasks.length">Clear completed ({{tasks.length - remainingCount}})</span>                            
+                        </li>
+						
+                    </ul>
+                </footer><!--//푸터-->
+                
+            </section><!--//섹션-->
+        </div><!--//12그리드 부트스트랩-->
+    </div><!--//전체 로우-->
+</div><!--//메모 페이지 내부-->
